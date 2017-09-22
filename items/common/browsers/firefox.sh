@@ -1,6 +1,12 @@
+# Returns the path to the user's Firefox profiles directory.
+get_firefox_base_path() {
+    echo -n "/home/$1/.mozilla/firefox"
+}
+
 # Returns the path to the user's first Firefox profile.
 get_firefox_profile_path() {
-    return "/home/$1/.mozilla/firefox/$(grep Path= /home/$1/.mozilla/firefox/profiles.ini | cut -d= -f2)"
+    BASE_PATH="$(get_firefox_base_path $1)"
+    echo -n "$BASE_PATH/$(grep Path= $BASE_PATH/profiles.ini | cut -d= -f2)"
 }
 
 # Installs a Firefox addon as part of the user's first profile.

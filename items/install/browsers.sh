@@ -1,7 +1,7 @@
 # Graphical browser: Firefox.
 install firefox
 
-source $ITEMS_DIR/browsers/firefox.sh
+source $DIR/items/common/browsers/firefox.sh
 
 # Gestures.
 run install_firefox_addon "https://addons.mozilla.org/firefox/downloads/latest/firegestures/addon-6366-latest.xpi"
