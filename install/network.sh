@@ -1,0 +1,3 @@
+install netctl
+
+install openssh
