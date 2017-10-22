@@ -12,6 +12,7 @@ run install_firefox_addon "https://addons.mozilla.org/firefox/downloads/latest/u
 # Privacy.
 run install_firefox_addon "https://addons.mozilla.org/firefox/downloads/latest/https-everywhere/addon-229918-latest.xpi"
 run install_firefox_addon "https://addons.mozilla.org/firefox/downloads/latest/decentraleyes/addon-521554-latest.xpi"
+run install_firefox_addon "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/platform:2/addon-506646-latest.xpi"
 
 run write_firefox_preference "browser.cache.disk.capacity" 0
 run write_firefox_preference "browser.cache.disk.enable" false
